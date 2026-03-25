@@ -1,0 +1,137 @@
+Question 2 - Load CSV files and display the count of each dataset
+=================================================================
+2015 - Cincinnati (72429793812): 365 records
+2015 - Florida (99495199999): 355 records
+2016 - Cincinnati (72429793812): 366 records
+2016 - Florida (99495199999): FILE DOES NOT EXIST
+2017 - Cincinnati (72429793812): 365 records
+2017 - Florida (99495199999): 283 records
+2018 - Cincinnati (72429793812): 365 records
+2018 - Florida (99495199999): 363 records
+2019 - Cincinnati (72429793812): 365 records
+2019 - Florida (99495199999): 345 records
+2020 - Cincinnati (72429793812): 366 records
+2020 - Florida (99495199999): 365 records
+2021 - Cincinnati (72429793812): 365 records
+2021 - Florida (99495199999): 104 records
+2022 - Cincinnati (72429793812): 365 records
+2022 - Florida (99495199999): 259 records
+2023 - Cincinnati (72429793812): 365 records
+2023 - Florida (99495199999): 276 records
+2024 - Cincinnati (72429793812): 366 records
+2024 - Florida (99495199999): 133 records
+
+Total datasets loaded: 19
+Total combined records: 6136
+
+Question 3 - Find the hottest day (MAX) for each year
+=====================================================
++-----------+------------------------------------------------+----------+-----+
+|STATION    |NAME                                            |DATE      |MAX  |
++-----------+------------------------------------------------+----------+-----+
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2015-06-12|91.9 |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2016-07-24|93.9 |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-07-22|91.9 |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2018-07-04|96.1 |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2019-09-30|95.0 |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2020-07-05|93.9 |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2021-08-12|95.0 |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2022-06-14|96.1 |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2023-08-23|96.1 |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2024-08-30|100.9|
++-----------+------------------------------------------------+----------+-----+
+
+Question 4 - Find the coldest day (MIN) for March across all years (2015-2024)
+===============================================================================
++-----------+------------------------------------------------+----------+---+
+|STATION    |NAME                                            |DATE      |MIN|
++-----------+------------------------------------------------+----------+---+
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2015-03-06|3.2|
++-----------+------------------------------------------------+----------+---+
+
+Question 5 - Find the year with the most precipitation for Cincinnati and Florida
+=================================================================================
++-----------+------------------------------------------------+----+-------------------+
+|STATION    |NAME                                            |YEAR|Mean of PRCP       |
++-----------+------------------------------------------------+----+-------------------+
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2018|0.15789041095890405|
+|99495199999|SEBASTIAN INLET STATE PARK, FL US               |2015|0.0                |
++-----------+------------------------------------------------+----+-------------------+
+
+Question 6 - Percentage of missing values for GUST in 2024
+==========================================================
++-----------+------------------------------------------------+-------------+-------------+------------------+
+|STATION    |NAME                                            |total_records|missing_count|missing_percentage|
++-----------+------------------------------------------------+-------------+-------------+------------------+
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|366          |143          |39.07             |
+|99495199999|SEBASTIAN INLET STATE PARK, FL US               |133          |133          |100.0             |
++-----------+------------------------------------------------+-------------+-------------+------------------+
+
+Question 7 - Mean, Median, Mode, and Std Dev of TEMP for Cincinnati by month in 2020
+=====================================================================================
++-----+-----+------+----+-------+
+|MONTH|Mean |Median|Mode|Std_Dev|
++-----+-----+------+----+-------+
+|1    |37.95|37.7  |24.7|8.35   |
+|2    |36.59|36.0  |25.9|7.9    |
+|3    |49.07|47.8  |43.0|8.78   |
+|4    |51.78|51.0  |55.7|7.31   |
+|5    |60.89|63.7  |73.9|9.31   |
+|6    |72.55|73.7  |74.7|4.9    |
+|7    |77.6 |77.9  |77.5|2.34   |
+|8    |73.35|73.7  |73.2|3.49   |
+|9    |66.1 |65.8  |75.3|7.12   |
+|10   |55.19|54.0  |63.8|6.73   |
+|11   |48.0 |47.7  |47.7|6.83   |
+|12   |35.99|35.2  |32.1|6.64   |
++-----+-----+------+----+-------+
+
+Question 8 - Top 10 days with lowest Wind Chill for Cincinnati in 2017
+======================================================================
+WDSP converted from knots to mph (* 1.15078)
++-----------+------------------------------------------------+----------+----+----+----------+
+|STATION    |NAME                                            |DATE      |TEMP|WDSP|Wind_Chill|
++-----------+------------------------------------------------+----------+----+----+----------+
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-01-07|10.5|7.0 |-1.38     |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-31|11.0|5.3 |1.11      |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-27|13.0|5.8 |2.91      |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-28|13.6|5.8 |3.63      |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-01-06|13.6|5.5 |3.98      |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-01-08|15.9|5.2 |7.07      |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-25|25.8|13.5|13.43     |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-30|21.6|5.3 |13.75     |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-01-05|22.2|5.8 |13.96     |
+|72429793812|CINCINNATI MUNICIPAL AIRPORT LUNKEN FIELD, OH US|2017-12-26|23.3|6.2 |14.9      |
++-----------+------------------------------------------------+----------+----+----+----------+
+
+Question 9 - Days with extreme weather conditions for Florida (FRSHTT)
+======================================================================
+Total days with extreme weather conditions for Florida: 0
+
++---+----+----+----+-------+-------+
+|Fog|Rain|Snow|Hail|Thunder|Tornado|
++---+----+----+----+-------+-------+
+|0  |0   |0   |0   |0      |0      |
++---+----+----+----+-------+-------+
+
+Question 10 - Predict MAX Temperature for Cincinnati for Nov & Dec 2024
+=======================================================================
+Model: Linear Regression
+Features: MONTH, DAY_OF_YEAR, TEMP, MIN
+Training Data: Cincinnati 2022-2023
+
+Model Coefficients: [0.07845602401354168,0.0,1.4586710562621248,-0.49853899792871387]
+Model Intercept: 9.529992234630255
+Training RMSE: 4.27
+Training R2: 0.9372
+
+Predicted vs Actual MAX Temperature for Cincinnati Nov & Dec 2024:
++-----+-------------+----------+
+|MONTH|Predicted_MAX|Actual_MAX|
++-----+-------------+----------+
+|11   |85.43        |80.1      |
+|12   |75.06        |63.0      |
++-----+-------------+----------+
+
+Test RMSE: 5.01
+Test R2: 0.8141
